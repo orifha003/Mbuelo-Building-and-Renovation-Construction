@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.25),
+    rgba(0,0,0,0.25)),
+    url(../images/MBRCbackgroundphoto.jpeg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation */
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgb(89, 120, 146);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Logo */
+.logo img{
+    width: 120px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.logo img:hover{
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 12px 25px rgba(255,255,255,0.4);
+}
+
+/* Navigation Bar */
+.nav-bar ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(15px);
+    padding: 15px 30px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Navigation Links */
+.nav-bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar ul li a:hover{
+    background: white;
+    color: #23415c;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.4);
+}
+
+/* Home Title */
+.home-title{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
+
+.home-title h1{
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+}
+
+.home-title p{
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #f1f1f1;
+}
+
+/* Home Image */
+.home-image{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.home-image img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid rgba(255,255,255,0.6);
+    transition: 0.4s ease;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+.home-image img:hover{
+    transform: scale(1.05);
+}
+
+/* Home Paragraph */
+.home-para{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: white;
+    background: rgba(255, 255, 255, 0.404);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.footer{
+    margin-top: 80px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(89, 120, 146);
+}
+
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color: #83dbdb;
+}
